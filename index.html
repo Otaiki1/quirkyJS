@@ -1,0 +1,54 @@
+<style>
+    .container{
+        width: 50%;
+        margin: auto;
+        margin-top: 10%;
+        padding: 20px;
+        box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+    }
+    input[type='textbox']{
+        width: 100%;
+        padding: 15px 10px;
+        border: none;
+        border-radius: 50px;
+        background-color: #ddd;
+        margin-bottom: 20px;
+    }
+    button{
+        width: 100%;
+        padding: 15px 10px;
+        border-radius: 20px;
+        border: none;
+        font-size: 16px;
+        background-color: rgb(71, 71, 201);
+        color: white;
+    }
+</style>
+<script>
+    function f(){
+    va=document.all.g.value
+    aa=''
+
+    for(ii=va.length;ii>=0;ii--){
+    aa=aa+va.charAt(ii)}
+
+    if(va==aa){alert("this is a palindrome")}
+    else {alert("this is not a palindrome")}
+    }
+    function buttonree(){
+        clrbx=document.all.txtbx.value
+        haty=document.getElementById("clrpkr")
+        haty.style.color = clrbx
+        }
+</script>
+<div class="container">
+    <h1>check if a particular word is a palindrome</h1>
+    <input type=textbox name=g>
+    <button onclick=f()>Test</button>
+    <h1 id="clrpkr"> I would change my color to whatever color you type</h1>
+    <input type=textbox name="txtbx">
+    <button onclick=buttonree()> test</button>
+   
+
+
+</div>
